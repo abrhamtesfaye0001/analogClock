@@ -54,6 +54,36 @@ function hourCount() {
     
     setTimeout(hourCount, 1800000);
 }
+function minuteCount() {
+    
+    var today = new Date();
+    var m = today.getMinutes();
+    
+    minuteHand.style.transform = `rotate(${m*6-180}deg)`
+    // console.log(minuteHand.style.transform)
+    placeObjects()
+    minuteHand.style.transformOrigin = "top left"
+    
+    
+    setTimeout(minuteCount, 30000);
+}
+function secondCount() {
+    var today = new Date();
+    
+    var s = today.getSeconds();
+    
+    secondHand.style.transform = `rotate(${6*s}deg)`
+    placeObjects()
+    secondHand.style.transformOrigin = "top left"
+    
+    
+    setTimeout(secondCount, 500);
+}
+hourCount()
+minuteCount()
+secondCount()
+
+
 
 
 
