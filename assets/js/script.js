@@ -38,3 +38,24 @@ function placeObjects(){
 }
 
 placeObjects()
+
+
+function hourCount() {
+    
+    var today = new Date();
+    var h = today.getHours();    
+    h = h % 12 || 12;
+    
+    
+    placeObjects()
+    hourHand.style.transform = `rotate(${30*h}deg)`
+    hourHand.style.transformOrigin = "top left"
+    
+    
+    setTimeout(hourCount, 1800000);
+}
+
+
+
+
+
