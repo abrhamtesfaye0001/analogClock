@@ -5,11 +5,21 @@ img {
     width: 40%;
   }
 
+#second{
+    z-index: 1;
+    position: absolute;
+    
+    width: 3px;
+    height: 100px;
+    background-color: yellow;
+}
+
+
 #minute{
     z-index: 2;
     position: absolute;
     
-    width: 5px;
+    width: 4px;
     height: 100px;
     background-color: red;
 }
@@ -19,6 +29,14 @@ img {
     position: absolute;
     
     width: 5px;
-    height: 100px;
+    height: 50px;
     background-color: green;
+}
+#center{
+    width:15px;
+    height: 15px;
+    z-index: 10;
+    position: absolute;
+    border-radius: 10px;
+    background-color: black;
 }
