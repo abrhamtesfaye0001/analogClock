@@ -1,0 +1,24 @@
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+  }
+
+#minute{
+    z-index: 2;
+    position: absolute;
+    
+    width: 5px;
+    height: 100px;
+    background-color: red;
+}
+
+#hour{
+    z-index: 3;
+    position: absolute;
+    
+    width: 5px;
+    height: 100px;
+    background-color: green;
+}
